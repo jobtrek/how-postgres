@@ -12,3 +12,4 @@ the official documentation.
 - [Installation](./installation.md)
 - [Basics - users and databases](./basics/users_database.md)
 - [Basics - accessing database](./basics/accessing_database.md)
+- [Basics - table creation](./basics/table_creation.md)
