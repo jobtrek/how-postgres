@@ -11,3 +11,4 @@ the official documentation.
 - [Architecture](./architecture.md)
 - [Installation](./installation.md)
 - [Basics - users and databases](./basics/users_database.md)
+- [Basics - accessing database](./basics/accessing_database.md)
