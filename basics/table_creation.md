@@ -6,6 +6,8 @@ columns allow you to define the structure of the data you will store on the db.
 Once your table is created, the database engine will be able to query it via
 SQL commands.
 
+> *[postgres doc - table creation](https://www.postgresql.org/docs/15/tutorial-table.html)*
+
 ## Table creation syntax
 
 ````postgresql

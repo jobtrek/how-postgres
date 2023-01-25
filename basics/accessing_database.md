@@ -13,3 +13,5 @@ execute SQL commands on it.
 
 Alternatively you can use database inspection tools, like TablePlus, datagrip,
 your IDE, adminer. You can find instructions on the web for your tools.
+
+> *[postgres doc - accessing db](https://www.postgresql.org/docs/15/tutorial-accessdb.html)*
