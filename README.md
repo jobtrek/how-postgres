@@ -9,4 +9,5 @@ the official documentation.
 ## Summary
 
 - [Architecture](./architecture.md)
-- [Installation]()
+- [Installation](./installation.md)
+- [Basics - users and databases](./basics/users_database.md)
