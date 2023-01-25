@@ -2,10 +2,10 @@
 
 When you start working on a project that needs to access the database, best
 practices would tell you to create a new user, database and schema.
-This steps allows you to securely split you different accesses to databases (via
-roles and access rights) and organize efficiently your work.
+These steps allows you to securely split your different accesses to databases (via
+roles and access rights) and organise efficiently your work.
 
-The next few lines goes through the different commands to manage users, db, and
+The next few lines go through the different commands to manage users, db, and
 schemas.
 
 If you need more advanced user or schema management techniques, feel free to
@@ -14,16 +14,16 @@ investigate relevant chapters of the official documentation.
 ## Vocabulary
 
 - **user** : Exactly what you think, you can create users and give them accesses
-to certain databses. Like users files rights on you OS.
+  to certain databses. Like users files rights on your OS.
 - **database** : Here will be stored all the things related to your project database,
-typically tables, indexes, views. You will typically have one database per "project".
+  typically tables, indexes, views. You will typically have one database per "project".
 - **schema** : You can see it like namespaces, that allows you to separate tables
-in "subcategories" -> the schema.
+  in "subcategories" -> the schema.
 
 ## Accessing your database server
 
-Depending on you installation, the connection will vary. On unix like systems,
-you acess postgreSQL command interface via :
+Depending on your installation, the connection will vary. On Unix-like systems,
+you access postgreSQL command interface via :
 
 ```shell
 sudo -u postgres psql
@@ -31,9 +31,9 @@ sudo -u postgres psql
 
 This will launch the psql command with the postgres user.
 
-## Creating user, db and schema via SQL commands
+## Creating user and database
 
-When you are connected to the database server (with an user with sufficient rights,
+When you are connected to the database server (with a user with sufficient rights,
 like the *postgres* global database administrator) you can try your first user
 creation commands.
 
