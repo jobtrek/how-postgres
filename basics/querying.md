@@ -1,4 +1,4 @@
-# Inserting data in a table
+# Querying our tables
 
 Retrieve all data in a table :
 
