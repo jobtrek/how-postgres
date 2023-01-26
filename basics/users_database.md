@@ -39,7 +39,7 @@ creation commands.
 
 ### Create a fresh user :
 
-```postgresql
+```sql
 CREATE USER yourusername WITH ENCRYPTED PASSWORD 'yourpass';
 ```
 > You can create users with other
@@ -48,13 +48,13 @@ CREATE USER yourusername WITH ENCRYPTED PASSWORD 'yourpass';
 
 ### Create a new database
 
-````postgresql
+````sql
 CREATE DATABASE yourdatabasename;
 ````
 
 ### Get your user access to the newly created database
 
-````postgresql
+````sql
 GRANT ALL PRIVILEGES ON DATABASE yourdatabasename TO yourusername;
 ````
 

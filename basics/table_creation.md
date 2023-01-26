@@ -10,7 +10,7 @@ SQL commands.
 
 ## Table creation syntax
 
-````postgresql
+````sql
 CREATE TABLE my_table_name -- specify the table name
 (
     -- first the column name, then the type of the column
@@ -22,14 +22,14 @@ CREATE TABLE my_table_name -- specify the table name
 
 ### Table destruction
 
-````postgresql
+````sql
 DROP TABLE my_table_name;
 ````
 
 ### Concrete example
 
 Creation of a table to store users :
-````postgresql
+````sql
 CREATE TABLE "user"
 (
     id serial PRIMARY KEY,
