@@ -13,3 +13,4 @@ the official documentation.
 - [Basics - users and databases](./basics/users_database.md)
 - [Basics - accessing database](./basics/accessing_database.md)
 - [Basics - table creation](./basics/table_creation.md)
+- [Basics - inserting data in table](./basics/inserting_data.md)
