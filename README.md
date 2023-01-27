@@ -15,3 +15,4 @@ the official documentation.
 - [Basics - table creation](./basics/table_creation.md)
 - [Basics - inserting data in table](./basics/inserting_data.md)
 - [Basics - querying your tables](./basics/querying.md)
+- [Basics - updating tables data](./basics/updating.md)
