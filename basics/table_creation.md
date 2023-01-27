@@ -17,7 +17,7 @@ CREATE TABLE my_table_name -- specify the table name
     my_first_field  text,
     my_second_field int,
     a_date_field    date
-)
+);
 ````
 
 ### Table destruction
