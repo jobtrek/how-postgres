@@ -24,9 +24,12 @@ TODOS :
 - Constraints and indexes
 - Joins
 - Advanced queries
+- Views
 - Usefully data types
 - Techniques
+  - Window functions
   - Analyse query planning
   - Full text search
   - Materialised views
   - Performance tuning
+  - Partitioning
