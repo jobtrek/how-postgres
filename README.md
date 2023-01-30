@@ -10,10 +10,23 @@ the official documentation.
 
 - [Architecture](./architecture.md)
 - [Installation](./installation.md)
-- [Basics - users and databases](./basics/users_database.md)
-- [Basics - accessing database](./basics/accessing_database.md)
-- [Basics - table creation](./basics/table_creation.md)
-- [Basics - inserting data in table](./basics/inserting_data.md)
-- [Basics - querying your tables](./basics/querying.md)
-- [Basics - updating table data](./basics/updating.md)
-- [Basics - delete table data](./basics/deleting.md)
+- **Basics :**
+  - [Users and databases](./basics/users_database.md)
+  - [Accessing database](./basics/accessing_database.md)
+  - [Table creation](./basics/table_creation.md)
+  - [Inserting data in table](./basics/inserting_data.md)
+  - [Querying your tables](./basics/querying.md)
+  - [Updating table data](./basics/updating.md)
+  - [Delete table data](./basics/deleting.md)
+  - [Aggregates](./basics/aggregates.md)
+
+TODOS :
+- Constraints and indexes
+- Joins
+- Advanced queries
+- Usefully data types
+- Techniques
+  - Analyse query planning
+  - Full text search
+  - Materialised views
+  - Performance tuning
