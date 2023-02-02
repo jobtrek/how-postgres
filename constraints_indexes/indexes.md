@@ -29,6 +29,25 @@ extremely fast, and therefore accelerate your queries.
 
 ### Creating an index
 
+You can use `CREATE INDEX` to generate a new index on an existing table.
+
+````sql
+CREATE TABLE my_table ( -- table creation
+    my_field int
+);
+
+CREATE INDEX my_field_index ON my_table (my_field); -- add index on my_field
+````
+The database will now maintain an index on the `my_field` column, and next requests
+can be accelerated by the index.
+
+> WARNING : adding an index doesn't mean performance boost, in some cases this
+> may even lead to a loss of performance. It's important to understand the
+> specificities of indexes to correctly use them.
+
+## Typical index situations
+
+## Index types
 
 
 > *[postgres docs - indexes](https://www.postgresql.org/docs/current/indexes.html)*
