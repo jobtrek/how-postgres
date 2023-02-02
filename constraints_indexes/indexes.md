@@ -76,5 +76,9 @@ CREATE TABLE places (
 
 ## Index types
 
+It's important to understand that not all types of data can be indexed in the same
+way. The most common index type is *b-tree*, this index is suitable for data
+that can be ordered, like numbers. In some situations, we will need some more complex
+indexes, for example, to search text or to compare geometric shapes.
 
 > *[postgres docs - indexes](https://www.postgresql.org/docs/current/indexes.html)*
