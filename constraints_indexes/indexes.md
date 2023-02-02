@@ -47,6 +47,33 @@ can be accelerated by the index.
 
 ## Typical index situations
 
+As we have seen in the precedent chapter, the database automatically creates indexes
+in some cases, for primary keys, constraints...
+
+### Primary key
+
+When we create tables, we almost always need a primary key, this key will allow
+us to find a record in a unique way, and check the record is not null.
+In order to check that the primary key is unique, the database will
+automatically add an index.
+
+```sql
+CREATE TABLE products (
+    id serial PRIMARY KEY -- id is our column name, serial is the type.
+    -- PRIMARY KEY is a special keyword that creates an index and add a une constraint
+);
+```
+
+### Unique columns
+
+Like the `PRIMARY KEY` keyword, you can also use the `UNIQUE` keyword, this will
+add a constraint of uniqueness, and an index. But don’t ensure not null.
+````sql
+CREATE TABLE places (
+     zip_code int UNIQUE -- The zip code must be unique on this table
+);
+````
+
 ## Index types
 
 
