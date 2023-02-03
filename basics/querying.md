@@ -27,9 +27,13 @@ SELECT * FROM "user" ORDER BY name LIMIT 10;
 Specify query conditions with the `WHERE` clause :
 
 ````sql
-SELECT * FROM "user" WHERE name = 'Titi'; -- Gets only Titi
+SELECT *
+FROM "user"
+WHERE name = 'Titi'; -- Gets only Titi
 
-SELECT * FROM "user" WHERE birthdate < '2000-01-01'; -- selects dates before 2000
+SELECT *
+FROM "user"
+WHERE birthdate < '2000-01-01'; -- selects dates before 2000
 ````
 
 > *[postgres doc - querying a table](https://www.postgresql.org/docs/15/tutorial-select.html)*

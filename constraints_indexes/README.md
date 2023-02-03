@@ -11,8 +11,9 @@ greater than 0.
 
 Let's create this table :
 ````sql
-CREATE TABLE devices (
-    name varchar(100) NOT NULL, -- will ensure no null
+CREATE TABLE devices
+(
+    name   varchar(100) NOT NULL,   -- will ensure no null
     weight int CHECK ( weight > 0 ) -- will ensure that weight is greater than 0
 );
 ````

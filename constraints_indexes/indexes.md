@@ -2,6 +2,7 @@
 
 Indexes are one of the most powerful features of a database system.
 They allow many features like :
+
 - Accelerating searches through your tables.
 - Allowing to efficiently check uniqueness constraints.
 
@@ -32,12 +33,14 @@ extremely fast, and therefore accelerate your queries.
 You can use `CREATE INDEX` to generate a new index on an existing table.
 
 ````sql
-CREATE TABLE my_table ( -- table creation
+CREATE TABLE my_table
+( -- table creation
     my_field int
 );
 
 CREATE INDEX my_field_index ON my_table (my_field); -- add index on my_field
 ````
+
 The database will now maintain an index on the `my_field` column, and next requests
 can be accelerated by the index.
 
@@ -58,7 +61,8 @@ In order to check that the primary key is unique, the database will
 automatically add an index.
 
 ```sql
-CREATE TABLE products (
+CREATE TABLE products
+(
     id serial PRIMARY KEY -- id is our column name, serial is the type.
     -- PRIMARY KEY is a special keyword that creates an index and add a une constraint
 );
@@ -68,9 +72,11 @@ CREATE TABLE products (
 
 Like the `PRIMARY KEY` keyword, you can also use the `UNIQUE` keyword, this will
 add a constraint of uniqueness, and an index. But don’t ensure not null.
+
 ````sql
-CREATE TABLE places (
-     zip_code int UNIQUE -- The zip code must be unique on this table
+CREATE TABLE places
+(
+    zip_code int UNIQUE -- The zip code must be unique on this table
 );
 ````
 
