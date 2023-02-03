@@ -29,15 +29,17 @@ DROP TABLE my_table_name;
 ### Concrete example
 
 Creation of a table to store users :
+
 ````sql
 CREATE TABLE "user"
 (
-    id serial PRIMARY KEY,
-    name varchar(60) UNIQUE,
+    id        serial PRIMARY KEY,
+    name      varchar(60) UNIQUE,
     birthdate date,
-    email varchar(320) UNIQUE
+    email     varchar(320) UNIQUE
 );
 ````
+
 > Note that “user” table name must be quoted, it’s a reserved keyword.
 
 We will explain types, constraints, key on next chapters.

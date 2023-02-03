@@ -19,6 +19,9 @@ the official documentation.
   - [Updating table data](./basics/updating.md)
   - [Delete table data](./basics/deleting.md)
   - [Aggregates](./basics/aggregates.md)
+- [Constraints and indexes](./constraints_indexes)
+  - [Indexes](./constraints_indexes/indexes.md)
+  - [Constraints](./constraints_indexes/constraints.md)
 
 TODOS :
 - Constraints and indexes

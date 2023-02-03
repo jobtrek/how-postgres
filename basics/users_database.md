@@ -42,6 +42,7 @@ creation commands.
 ```sql
 CREATE USER yourusername WITH ENCRYPTED PASSWORD 'yourpass';
 ```
+
 > You can create users with other
 > [authentication techniques than password](https://www.postgresql.org/docs/current/client-authentication.html),
 > we will stay with password in this tutorial.
