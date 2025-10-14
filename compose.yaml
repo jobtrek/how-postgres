@@ -3,7 +3,7 @@ services:
     image: postgres:18
     container_name: postgres_db
     environment:
-      POSTGRES_USER: 'user'
+      POSTGRES_USER: 'postgres'
       POSTGRES_PASSWORD: 'password'
       POSTGRES_DB: 'training_db'
     volumes:
@@ -18,8 +18,10 @@ services:
     container_name: pgadmin_container
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: 'default@test.ch'
-      PGADMIN_DEFAULT_PASSWORD: 'password'
+      PGADMIN_DEFAULT_EMAIL: "postgres@example.com"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
     ports:
       - "8080:80"
     volumes:
