@@ -31,16 +31,15 @@ There is also a container with the [pgAdmin](https://www.pgadmin.org/) tool avai
 
 There is multiple ways to interact with a PostgreSQL database :
 
-1. From the command line with `psql` tool :
-  ```shell
-  docker compose exec -it db psql -U postgres -d training_db
-  ```
-  This give you acces to a psql shell where you can execute SQL commands. See [psql Usage](https://www.postgresql.org/docs/current/app-psql.html#usage:~:text=ON_ERROR_STOP%20was%20set.-,Usage,-Connecting%20to%20a) for more information.
-1. From your host machine with a PostgreSQL client like :
+1. From the command line with `psql` tool from inside the docker container : `docker compose exec -it db psql -U postgres -d training_db` This give you acces to a psql shell where you can execute SQL commands.
+2. From the command line with `psql` tool from your host machine :
+  - Install `psql` on your host machine (search for instructions specific to your OS). E.g. on Debian : `sudo apt install postgresql-client`
+  - Connect to the database in the container from your host machine : `psql -h localhost -U postgres -d training_db`
+3. From your host machine with a PostgreSQL client like :
   - [DataGrip](https://www.jetbrains.com/datagrip/) : a database IDE from JetBrains.
   - [VSCode postgreSQL extension](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql) : a PostgreSQL extension for VSCode.
   - [DBeaver](https://dbeaver.io/) : a desktop database management tool.
-1. From the pgAdmin web interface available on [localhost:8080](http://localhost:8080).
+4. From the pgAdmin web interface available on [localhost:8080](http://localhost:8080).
   - Add a new server with the following parameters :
     - General tab :
       - Name : `Postgres Training`
@@ -52,3 +51,25 @@ There is multiple ways to interact with a PostgreSQL database :
       - Password : `password`
     - Click on Save.
   - You should now see the `Postgres Training` server in the left sidebar, you can now expand the menus to explore the database.
+
+## Resources
+
+- [PostgreSQL official documentation](https://www.postgresql.org/docs/current/index.html)
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+- [PostgreSQL Exercises](https://pgexercises.com/)
+- [PostgreSQL Cheat Sheet](https://www.tigerdata.com/learn/postgres-cheat-sheet)
+- [`psql` documentation](https://www.postgresql.org/docs/current/app-psql.html#usage:~:text=ON_ERROR_STOP%20was%20set.-,Usage,-Connecting%20to%20a)
+- [`psql` basics](https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql)
+
+## Loading sample data for testing
+
+Download the sample data from [here](https://github.com/h8/employees-database) and load it into the database. This is a sample employees database with multiple tables and relations.
+
+```shell
+# Download the sample data
+wget https://raw.githubusercontent.com/h8/employees-database/refs/heads/master/employees_data.sql.bz2
+# Unzip the sample data
+bzip2 -d employees_data.sql.bz2
+# Load the sample data into the database (with psql from the host machine)
+psql -h localhost -U postgres -d training_db -f employees_data.sql
+```
