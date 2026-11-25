@@ -61,6 +61,14 @@ There is multiple ways to interact with a PostgreSQL database :
 - [`psql` documentation](https://www.postgresql.org/docs/current/app-psql.html#usage:~:text=ON_ERROR_STOP%20was%20set.-,Usage,-Connecting%20to%20a)
 - [`psql` basics](https://hasura.io/blog/top-psql-commands-and-flags-you-need-to-know-postgresql)
 
+## Datasets
+
+The [`datasets/`](./datasets) folder holds ready-to-load datasets, mounted read-only in the
+database container under `/datasets`:
+
+- [Equipment loans](./datasets/equipment-loans/README.md): the IT equipment a company lends
+  to its employees, a few thousand rows.
+
 ## Loading sample data for testing
 
 Download the sample data from [here](https://github.com/h8/employees-database) and load it into the database. This is a sample employees database with multiple tables and relations.
